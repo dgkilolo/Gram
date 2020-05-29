@@ -10,8 +10,11 @@
       <title>Gram</title>
     {% endif %}
 
-    
-
+    {% block styles %}
+      {% bootstrap_css %}
+      <link rel="stylesheet" href="{% static 'css/baseGram.css' %}">
+    {% endblock %}
+  
   </head>
   <body>
     {% include 'navbar.html' %}
