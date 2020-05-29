@@ -7,3 +7,8 @@ class Image(models.Model):
   name = models.CharField(max_length=30, blank=True)
   caption = models.TextField(blank=True)
   date = models.DateTimeField(auto_now_add=True)
+
+  def save_image(self):
+    self.save()
+  def delete_image(self):
+    Image.objects.filter(pk=self.id).delete()
