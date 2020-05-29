@@ -12,3 +12,4 @@ class Image(models.Model):
     self.save()
   def delete_image(self):
     Image.objects.filter(pk=self.id).delete()
+  
