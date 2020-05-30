@@ -1,3 +1,4 @@
+{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,13 +9,13 @@
     <nav class="navbar navbar-inverse" >
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="">The School Tribune</a>
+          <a class="navbar-brand" href="">Gram</a>
         </div>
         <!-- Adding a search form -->
         <div class="col-sm-4 col-md-4 navbar-right">
           <form class="navbar-form" role="search"  action="">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search..." name="gram">
+              <input type="text" class="form-control" style="text-align: center;" placeholder="Search..." name="gram">
               <div class="input-group-btn">
                 <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i> </button>              
               </div>
@@ -27,15 +28,13 @@
           {% if user.is_authenticated %}
           <ul>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account
-                        <span class="caret"></span>
-                    </a>
+              <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">
+                Account <span class="caret"></span>                
+              </a>
+              <a href="/accounts/logout">Logout</a>
               <ul class="dropdown-menu" role="menu">
                 <li>
                   <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Create Article</a>
                 </li>
                 <li>
                   <a href="/accounts/password/change">Change Password</a>
