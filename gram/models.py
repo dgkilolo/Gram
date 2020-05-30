@@ -13,3 +13,7 @@ class Image(models.Model):
   def delete_image(self):
     Image.objects.filter(pk=self.id).delete()
   
+  @classmethod
+  def all_images(cls):
+    images = cls.objects.all()
+    return images
