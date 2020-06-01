@@ -9,7 +9,7 @@
     <nav class="navbar navbar-inverse" >
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="">Gram</a>
+          <a class="navbar-brand" href="{% url 'home' %}" style="color: black;" ><strong>Gram</strong></a>
         </div>
         <!-- Adding a search form -->
         <div class="col-sm-4 col-md-4 navbar-right">
@@ -31,7 +31,8 @@
               <a href="#" class="dropdown-toggle btn " data-toggle="dropdown" role="button" aria-expanded="false">
                 Account <span class="caret"></span>                
               </a>
-              <a href="/accounts/logout">Logout</a>
+              <a class="btn" href="/accounts/logout">Logout</a>
+              <a class="btn" href="{%url 'new-image'%}">Add</a>
               <ul class="dropdown-menu" role="menu">
                 <li>
                   <a class="dropdown-item" href="">Home</a>
@@ -55,5 +56,6 @@
 
       </div>
     </nav>
+    <hr>
   </body>
 </html>
