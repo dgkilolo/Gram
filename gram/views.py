@@ -6,9 +6,11 @@ from .forms import NewImageForm
 
 # Create your views here.
 
+@login_required(login_url='/accounts/login/')
 def home(request):
   images = Image.all_images()
   return render(request, 'home.html', {'images':images} )
+  
 
 @login_required(login_url='/accounts/login/')
 def new_image(request):

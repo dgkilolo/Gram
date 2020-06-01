@@ -8,7 +8,7 @@ class Image(models.Model):
   name = models.CharField(max_length=30, blank=True)
   caption = models.TextField(blank=True)
   date = models.DateTimeField(auto_now_add=True)
-
+  
   def save_image(self):
     self.save()
   def delete_image(self):
@@ -18,3 +18,7 @@ class Image(models.Model):
   def all_images(cls):
     images = cls.objects.all()
     return images
+
+class Profile(models.Model):
+  profile_pic = models.ImageField(upload_to='gram/')
+  bio = models.CharField(max_length=100, blank=True )

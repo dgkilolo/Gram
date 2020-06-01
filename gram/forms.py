@@ -8,3 +8,4 @@ class NewImageForm(forms.ModelForm):
     widgets = {
       
     }
+
