@@ -19,3 +19,7 @@ class ImageTestClass(TestCase):
     self.image.delete_image()
     images = Image.objects.all()
     self.assertTrue(len(images)<1)
+  # Clearing database after each test
+  def test_teardown(self):
+    Image.objects.all().delete()
+  
