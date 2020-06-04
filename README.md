@@ -23,11 +23,11 @@
 
 ## Technologies & Languages
 
-**Version control (Git)** [https://git-scm.com/](url)
-
-**Version control (Flask)** [https://flask.palletsprojects.com/en/1.1.x/](url)
-
-**Version control (Python)** [https://www.python.org/](url)
+- Django 3.0.6
+- Python 3.6.9
+- Html
+- Css
+- Bootstrap4
 
 # Installation and Setup
 
@@ -67,7 +67,7 @@ python manage.py server
 | Method | Endpoint                        | Description                           | Roles         |
 | ------ | ------------------------------- | ------------------------------------- | ------------  |
 | POST   |        /auth/signup             | sign up a user                        | users         |
-| POST   |        /accounts/login              | log in  a user                        | users         |
+| POST   |        /accounts/login          | log in  a user                        | users         |
 | POST   |        /accounts/logout         | logout a user                         | users         |
 | POST   |        /new/image               | add a new image                       | users         |
 
