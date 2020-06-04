@@ -1,29 +1,75 @@
-# Gram
+## Gram
+- Gram is a python web application that has been made with Django. It is meant to be a clone of the popular application Instagram.
+- Users are first required to sign in to in order to use the application. The registration is carried out using Django registation that eliminates the possibility of having bugs. The user can then use the navbar to scroll through the various page in the application as well as logging out.
 
-Gram is a python web application that has been made with Django. It is meant to be a clone of the popular application Instagram.
+### Required Features
+- Sign in to the application to start using.
+- Upload my pictures to the application.
+- See my profile with all my pictures.
 
-## Setup/Installation Requirements
-* Users are first required to sign in to in order to use the application. The registration is carried out using Django registation that eliminates the possibility of having bugs. The user can then use the navbar to scroll through the various page in the application as well as logging out.
+### Additional Features
+- Follow other users and see their pictures on my timeline.
+- Like a picture and leave a comment on it.
 
 ## Bugs
-  Users are able to see pictures that have been posted by other users on their profile.
+- Users are able to see pictures that have been posted by other users on their profile.
 
-## Future Improvements
- 
-  Some functions of Instagram such as followings other users and seeing user stories would be a nice addition to the application.
+## Prerequisite
 
-## Built With
+- [Python3.6](https://www.python.org/downloads/release/python-365/)
+- [Virtual Environment](https://virtualenv.pypa.io/en/stable/installation/)
+- [Flask](http://flask.pocoo.org/)
+- [Flask-RESTful](https://flask-restful.readthedocs.io/en/latest/)
 
-* Python 3.6.9 
-* Django Framework 3.0
-* HTML and CSS
+## Technologies & Languages
 
-## Authors
+**Version control (Git)** [https://git-scm.com/](url)
 
-* David Kilolo
+**Version control (Flask)** [https://flask.palletsprojects.com/en/1.1.x/](url)
 
-## Support and contact details
-Feel free to contact me incase of any issues with the site as well as any ideas or contributions on how to improve the code.
+**Version control (Python)** [https://www.python.org/](url)
+
+# Installation and Setup
+
+Clone the repository below
+
+```
+git clone https://github.com/dgkilolo/Gram.git
+```
+
+### Create and activate a virtual environment
+
+    virtualenv venv --python=python3.6
+
+    source venv/bin/activate
+
+### Install required Dependencies
+
+    pip install -r requirements.txt
+
+### Copy environment variable
+
+    cp env.sample .env
+
+### Load/refresh .environment variables
+
+    source .env
+
+## Running the application
+
+```
+python manage.py server
+```
+
+
+## Endpoints Available
+
+| Method | Endpoint                        | Description                           | Roles         |
+| ------ | ------------------------------- | ------------------------------------- | ------------  |
+| POST   |        /auth/signup             | sign up a user                        | users         |
+| POST   |        /auth/login              | log in  a user                        | users         |
+| POST   |        /accounts/logout         | logout a user                         | users         |
+| POST   |        /new/image               | add a new image                       | users         |
 
 ## License
 
