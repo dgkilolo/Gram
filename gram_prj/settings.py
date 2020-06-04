@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'gram.apps.GramConfig',
     'bootstrap4',
     'tinymce',
+    'cloudinary',
     
 ]
 
