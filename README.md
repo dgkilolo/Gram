@@ -67,7 +67,7 @@ python manage.py server
 | Method | Endpoint                        | Description                           | Roles         |
 | ------ | ------------------------------- | ------------------------------------- | ------------  |
 | POST   |        /auth/signup             | sign up a user                        | users         |
-| POST   |        /auth/login              | log in  a user                        | users         |
+| POST   |        /accounts/login              | log in  a user                        | users         |
 | POST   |        /accounts/logout         | logout a user                         | users         |
 | POST   |        /new/image               | add a new image                       | users         |
 
