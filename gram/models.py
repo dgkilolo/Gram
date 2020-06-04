@@ -6,7 +6,6 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 class Image(models.Model):
   picture = models.ImageField(upload_to='gram/', blank=True)
-  # picture = CloudinaryField('image')
   name = models.CharField(max_length=30, blank=True)
   caption = models.TextField(blank=True)
   date = models.DateTimeField(auto_now_add=True)
